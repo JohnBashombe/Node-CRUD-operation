@@ -1,3 +1,6 @@
+/**
+ * @JohnBashombe
+ */
 class Codes {
   ok = (): number => 200;
   created = (): number => 201;

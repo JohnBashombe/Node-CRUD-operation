@@ -1,5 +1,7 @@
 import { Response } from "express";
-
+/**
+ * @JohnBashombe
+ */
 class Res {
   /**
    * @JohnBashombe

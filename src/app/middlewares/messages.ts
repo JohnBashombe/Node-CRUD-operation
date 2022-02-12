@@ -1,7 +1,10 @@
+/**
+ * @JohnBashombe
+ */
 class Messages {
   ok = (): string => "ok";
   success = (): string => "success";
-  welcomeMessage = (): string => "Welcom to Home Page";
+  welcomeMessage = (): string => "Welcome to Home Page";
   pageNotFound = (): string => "Page Not Found";
   created = (): string => "created";
   updated = (): string => "updated";
