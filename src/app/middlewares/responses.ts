@@ -1,10 +1,10 @@
 import { Response } from "express";
 /**
- * @JohnBashombe
+ * @author Ntavigwa Bashombe
  */
 class Res {
   /**
-   * @JohnBashombe
+   * @author Ntavigwa Bashombe
    * @param status
    * @param message
    * @param data
@@ -23,7 +23,7 @@ class Res {
   };
 
   /**
-   * @JohnBashombe
+   * @author Ntavigwa Bashombe
    * @param status
    * @param message
    * @param res
@@ -38,7 +38,7 @@ class Res {
   };
 
   /**
-   * @JohnBashombe
+   * @author Ntavigwa Bashombe
    * @param status
    * @param message
    * @param res

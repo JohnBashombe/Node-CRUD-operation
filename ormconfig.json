@@ -1,8 +1,0 @@
-{
-   "entities": [
-      "src/app/database/entity/**/*.ts"
-   ],
-   "cli": {
-      "entitiesDir": "src/app/database/entity"
-   }
-}

@@ -1,5 +1,5 @@
 /**
- * @JohnBashombe
+ * @author Ntavigwa Bashombe
  */
 class Codes {
   ok = (): number => 200;

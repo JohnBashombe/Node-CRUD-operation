@@ -1,5 +1,5 @@
 /**
- * @JohnBashombe
+ * @author Ntavigwa Bashombe
  */
 class Messages {
   ok = (): string => "ok";

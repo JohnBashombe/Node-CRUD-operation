@@ -8,11 +8,11 @@ const { responses, messages, codes } = middlewares;
 const Blog = new BlogControllers();
 
 /**
- * @JohnBashombe
+ * @author Ntavigwa Bashombe
  */
 class Routes {
   /**
-   * @JohnBashombe
+   * @author Ntavigwa Bashombe
    * @param app
    */
   public router = (app: Application): any => {
