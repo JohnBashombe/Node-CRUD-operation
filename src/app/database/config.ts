@@ -15,10 +15,23 @@ const { DB_USER_DEV, DB_PASSWORD_DEV, DB_NAME_DEV, DB_HOST_DEV } = process.env;
  */
 class DBConfig {
   /**
-   * @JohnBashombe
+   * @constructor
+   * @author Ntavigwa Bashombe
+   * @since 0.001
+   *
+   * @param {}
+   */
+  constructor() {
+    this.dbConfig();
+  }
+
+  /**
+   * @author Ntavigwa Bashombe
+   * @param {}
    * @returns createConnection
    */
   dbConfig = () => {
+    // console.log("Database config initiated...");
     return createConnection({
       type: "mysql",
       database: DB_NAME_DEV,
