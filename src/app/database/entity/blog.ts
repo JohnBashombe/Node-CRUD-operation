@@ -1,5 +1,16 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  BaseEntity,
+  Timestamp,
+  UpdateDateColumn,
+  CreateDateColumn,
+} from "typeorm";
 
+/**
+ * @author Ntavigwa Bashombe
+ */
 @Entity()
 class Blog extends BaseEntity {
   @PrimaryGeneratedColumn({
@@ -20,17 +31,19 @@ class Blog extends BaseEntity {
   })
   description: string;
 
-  @Column({
-    type: "datetime",
+  @CreateDateColumn({
+    type: "timestamp",
     comment: "Creation data",
+    default: Timestamp,
   })
-  createdOn: Date;
+  created_on: Date;
 
-  @Column({
-    type: "datetime",
+  @UpdateDateColumn({
+    type: "timestamp",
     comment: "Time of Update",
+    default: Timestamp,
   })
-  updatedOn: Date;
+  updated_on: Date;
 }
 
 export default Blog;

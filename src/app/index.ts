@@ -1,20 +1,14 @@
 import express from "express";
-
-import { route } from "./routes";
-
-import DBConfig from "./database/config";
-
 import * as dotenv from "dotenv";
 
-const db_config = new DBConfig();
-db_config.dbConfig();
+import { route } from "./routes";
 
 dotenv.config();
 
 const app = express();
+app.use(express.json());
 
 const { PORT } = process.env;
-
 route(app);
 
 app.listen(PORT, () => {
